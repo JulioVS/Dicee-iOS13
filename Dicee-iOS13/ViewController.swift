@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // IBOutlet allows referencing UI elements from code
+    @IBOutlet weak var diceImageView1: UIImageView!
+    @IBOutlet weak var diceImageView2: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        // Set initial dice faces at runtime
+        diceImageView1.image = UIImage(imageLiteralResourceName: "DiceSix")
+        diceImageView2.image = UIImage(imageLiteralResourceName: "DiceTwo")
     }
-
-
+    
 }
 
